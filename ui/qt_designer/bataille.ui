@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1047</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2E8B57
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>570</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: black; 
+    background-color: #E8F0FE;
+    border: 1px solid #B0C4DE;
+    border-radius: 6px; 
+    padding: 4px 8px; 
+    font-size: 18px;
+	text-align: center;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>{Joueur1}: {nbCartes} cartes</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>570</y>
+      <width>281</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: black; 
+    background-color: #E8F0FE; 
+    border: 1px solid #B0C4DE; 
+    border-radius: 6px; 
+    padding: 4px 8px;
+    font-size: 18px;
+	text-align:center;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>{Joueur2}: {nbCartes} cartes</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>560</y>
+      <width>211</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: #ffffff;
+    background-color: #3C91E6; 
+    border: 1px solid #2B7CB8;
+    border-radius: 8px;
+    padding: 8px 16px; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #5AA7EA; 
+    border: 1px solid #3C91E6; 
+}
+QPushButton:pressed {
+    background-color: #2B7CB8; 
+    border: 1px solid #235E8E;
+}
+QPushButton:disabled {
+    background-color: #9DA9B3; 
+    color: #6C757D; 
+    border: 1px solid #6C757D;
+}</string>
+    </property>
+    <property name="text">
+     <string>Jouer un tour</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>341</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0,0,0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/back.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>40</y>
+      <width>341</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(0,0,0,0)</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../images/back.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>670</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: #ffffff;
+    background-color: #ff4646; 
+    border: 1px solid #c33434;
+    border-radius: 8px;
+    padding: 8px 16px; 
+    font-size: 14px; 
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #e63c3c; 
+    border: 1px solid #c33434;
+}
+QPushButton:pressed {
+    background-color: #e63c3c; 
+    border: 1px solid #c33434;
+}
+QPushButton:disabled {
+    background-color: #9DA9B3; 
+    color: #6C757D; 
+    border: 1px solid #6C757D;
+}</string>
+    </property>
+    <property name="text">
+     <string>Jouer auto</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>230</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: black; 
+    background-color: #E8F0FE; 
+    border: 1px solid #B0C4DE; 
+    border-radius: 6px; 
+    padding: 4px 8px;
+    font-size: 18px;
+	text-align:center;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>Tour n°{tour}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>290</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: white
+</string>
+    </property>
+    <property name="text">
+     <string>{message_tour}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>690</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    color: #ffffff;
+    background-color: #3C91E6; 
+    border: 1px solid #2B7CB8;
+    border-radius: 8px;
+    padding: 8px 16px; 
+    font-size: 24px; 
+    font-weight: bold;
+}
+QPushButton:hover {
+    background-color: #5AA7EA; 
+    border: 1px solid #3C91E6; 
+}
+QPushButton:pressed {
+    background-color: #2B7CB8; 
+    border: 1px solid #235E8E;
+}
+QPushButton:disabled {
+    background-color: #9DA9B3; 
+    color: #6C757D; 
+    border: 1px solid #6C757D;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../images/icons/credits.png</normaloff>../images/icons/credits.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>48</width>
+      <height>48</height>
+     </size>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

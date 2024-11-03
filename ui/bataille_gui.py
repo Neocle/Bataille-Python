@@ -181,39 +181,3 @@ class Ui_MainWindow(object):
         self.pushButton_2.setText(_translate("MainWindow", "Jouer auto"))
         self.label_5.setText(_translate("MainWindow", "Tour n°{tour}"))
         self.label_6.setText(_translate("MainWindow", ""))
-
-    def mettre_a_jour_labels(self):
-        if self.partie:
-            self.label.setText(f"{self.partie.joueurs[0].get_nom()}: {self.partie.joueurs[0].get_nb_cartes()} cartes")
-            self.label_2.setText(f"{self.partie.joueurs[1].get_nom()}: {self.partie.joueurs[1].get_nb_cartes()} cartes")
-            self.label_5.setText(f"tour n°{self.partie.get_nb_tour()}")
-
-    def update_message_label(self, message):
-        self.label_6.setText(message)
-
-    def jouer_tour(self):
-        self.pushButton.setEnabled(False)
-        if self.partie and not self.partie.jouer_tour():
-            self.mettre_a_jour_labels()
-
-        QtCore.QTimer.singleShot(1000, lambda: self.pushButton.setEnabled(True))
-
-    def auto_play_turns(self):
-        if self.partie is None or not self.auto_play_active:
-            self.pushButton.setEnabled(True)
-            self.pushButton_2.setEnabled(True)
-            return
-
-        if self.partie and not self.partie.jouer_tour():
-            self.mettre_a_jour_labels()
-
-        if self.partie.partie_terminee:
-            self.pushButton.setEnabled(True)
-            self.pushButton_2.setEnabled(True)
-            return
-
-        QtCore.QTimer.singleShot(1000, self.auto_play_turns)
-
-    def update_card_images(self, image_joueur1, image_joueur2):
-        self.label_3.setPixmap(QtGui.QPixmap(image_joueur1))
-        self.label_4.setPixmap(QtGui.QPixmap(image_joueur2))

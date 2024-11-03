@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #2E8B57</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>281</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    color: black; /* Text color matching the poker table green for a cohesive look */
+    background-color: #E8F0FE; /* Light background color for contrast */
+    border: 1px solid #B0C4DE; /* Light gray-blue border */
+    border-radius: 6px; /* Rounded corners for a modern look */
+    padding: 4px 8px; /* Padding for spacing */
+    font-size: 18px; /* Font size */
+    text-decoration: bold;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>{vainqueur} a gagné la partie!</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #ffffff; /* Text color */
+    background-color: #3C91E6; /* Default background color (contrasting blue) */
+    border: 1px solid #2B7CB8; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px 16px; /* Padding */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+QPushButton:hover {
+    background-color: #5AA7EA; /* Hover background color (lighter blue) */
+    border: 1px solid #3C91E6; /* Hover border color */
+}
+
+QPushButton:pressed {
+    background-color: #2B7CB8; /* Pressed background color (darker blue) */
+    border: 1px solid #235E8E; /* Pressed border color */
+}
+
+QPushButton:disabled {
+    background-color: #9DA9B3; /* Disabled background color (gray) */
+    color: #6C757D; /* Disabled text color */
+    border: 1px solid #6C757D; /* Disabled border color */
+}</string>
+   </property>
+   <property name="text">
+    <string>Relancer une partie </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>230</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    color: #ffffff; /* Text color */
+    background-color: #ff4242; /* Default background color (contrasting blue) */
+    border: 1px solid #ff3434; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px 16px; /* Padding */
+    font-size: 14px; /* Font size */
+    font-weight: bold; /* Font weight */
+}
+
+QPushButton:hover {
+    background-color: #e02d2d; /* Hover background color (lighter blue) */
+    border: 1px solid #ff3434; /* Hover border color */
+}
+
+QPushButton:pressed {
+    background-color: #2B7CB8; /* Pressed background color (darker blue) */
+    border: 1px solid #235E8E; /* Pressed border color */
+}
+
+QPushButton:disabled {
+    background-color: #9DA9B3; /* Disabled background color (gray) */
+    color: #6C757D; /* Disabled text color */
+    border: 1px solid #6C757D; /* Disabled border color */
+}</string>
+   </property>
+   <property name="text">
+    <string>Fermer le jeu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>30</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(46, 139, 87, 0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../images/icons/crown.png</pixmap>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
